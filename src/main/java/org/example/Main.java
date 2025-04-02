@@ -1,14 +1,16 @@
 package org.example;
 
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
+        new App().run();
 
-            System.out.println("i = " + i);
-        }
+        sc.close();
+
     }
 }

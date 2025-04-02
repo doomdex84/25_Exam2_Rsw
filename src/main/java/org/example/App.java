@@ -36,7 +36,7 @@ public class App {
                System.out.println(id + "번 명언이 등록되었습니다.");
 
                List<Motivation>motivations = new ArrayList<>();
-               motivations.add(new Motivation(id, body, source,));
+               motivations.add(new Motivation(id, body, source));
 
                lastId++;
 

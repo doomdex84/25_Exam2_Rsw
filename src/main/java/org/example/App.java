@@ -33,11 +33,10 @@ public class App {
                String body = sc.nextLine();
                System.out.printf("작가 : ");
                String source = sc.nextLine();
-               String regdate = sc.nextLine();
                System.out.println(id + "번 명언이 등록되었습니다.");
 
                List<Motivation>motivations = new ArrayList<>();
-               motivations.add(new Motivation(id, body, source,regdate));
+               motivations.add(new Motivation(id, body, source,));
 
                lastId++;
 
@@ -96,6 +95,7 @@ public class App {
 //                   continue;
 //               }
 //               Motivation.remove(motivation);
+//               System.out.println(lastId + "번 명언이 삭제되었습니다.");
 
            }
 
@@ -111,15 +111,14 @@ class Motivation {
     private int id;
     private String body;
     private String source;
-    String regdate;
 
 
-    public Motivation(int id, String body, String source, String regdate) {
+
+    public Motivation(int id, String body, String source) {
         this.id = id;
         this.body = body;
         this.source = source;
-        this.regdate = regdate;
-    }
+            }
 
     public int getId() {
         return id;
